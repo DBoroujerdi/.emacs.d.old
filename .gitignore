@@ -1,0 +1,5 @@
+.saves/
+vendor/
+elpa/
+auto-save-list/
+session.*
