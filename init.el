@@ -24,6 +24,8 @@
 		      go-eldoc
 		      magit
 		      dirtree
+		      company
+		      company-go
 		      )
   "A list of packages to ensure are installed at launch.")
 
@@ -104,7 +106,7 @@
 
 (load "~/.emacs.d/go.el")
 (load "~/.emacs.d/puppet.el")
-(load "~/.emacs.d/scala.el")
+;; (load "~/.emacs.d/scala.el")
 
 ;; ===== markdown
 
