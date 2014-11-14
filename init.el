@@ -120,3 +120,7 @@
 
 ;; inserts newline on C-n when on last line in the buffer
 (setq next-line-add-newlines t)
+
+;; automatically make sh scripts executable on save
+(add-hook 'after-save-hook
+  'executable-make-buffer-file-executable-if-script-p)
