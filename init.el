@@ -117,3 +117,6 @@
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 (require 'dirtree)
+
+;; inserts newline on C-n when on last line in the buffer
+(setq next-line-add-newlines t)
