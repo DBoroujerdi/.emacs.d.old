@@ -1,6 +1,9 @@
 
 ;; ========= Golang ================
 
+(setenv "GOPATH" "~/git/go")
+(setenv "PATH" (concat (getenv "PATH") ":" "~/git/go/bin"))
+
 ;; golang (http://dominik.honnef.co/posts/2013/03/writing_go_in_emacs/)
 (add-to-list 'load-path "~/.emacs.d/vendor/go-mode")
 ;;(require 'go-mode-load)
@@ -20,12 +23,12 @@
 			   (local-set-key (kbd "C-c C-k") 'godoc)))
 
 ;; go-flymake
-(add-to-list 'load-path "~/dev/go/src/github.com/dougm/goflymake")
+(add-to-list 'load-path "~/git/go/src/github.com/dougm/goflymake")
 (require 'go-flymake)
 
 ;; auto-completion
 
-(add-to-list 'load-path "~/dev/go/src/github.com/nsf/gocode/emacs-company")
+(add-to-list 'load-path "~/git/go/src/github.com/nsf/gocode/emacs-company")
 (require 'company-go)
 
 (add-hook 'go-mode-hook (lambda ()
