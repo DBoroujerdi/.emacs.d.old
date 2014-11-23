@@ -128,7 +128,7 @@
 (add-hook 'after-save-hook
   'executable-make-buffer-file-executable-if-script-p)
 
-(defun eshell-here ()
+(defun shell-here ()
   "Opens up a new shell in the directory associated with the
 current buffer's file. The eshell is renamed to match that
 directory to make multiple eshell windows easier."
@@ -140,10 +140,14 @@ directory to make multiple eshell windows easier."
          (name   (car (last (split-string parent "/" t)))))
     (split-window-vertically (- height))
     (other-window 1)
-    (eshell "new")
-    (rename-buffer (concat "*eshell: " name "*"))
+    (shell "new")
+    (rename-buffer (concat "*shell: " name "*"))
 
     (insert (concat "ls"))
     (eshell-send-input)))
 
-(global-set-key (kbd "C-!") 'eshell-here)
+(global-set-key (kbd "C-!") 'shell-here)
+
+
+
+
