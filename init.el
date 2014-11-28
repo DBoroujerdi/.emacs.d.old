@@ -1,8 +1,8 @@
 
 ;; ===== Package Archives ======
 
-;;(require 'cask "~/.cask/cask.el")
-;;(cask-initialize)
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -16,25 +16,6 @@
   (package-refresh-contents))
 
 ;; ===== Automatically load abbreviations table =====
-
-;; default packages
-(defvar my-packages '(auto-complete
-                      puppet-mode
-		      flymake-puppet
-		      yaml-mode
-		      twittering-mode
-		      circe
-		      go-eldoc
-		      magit
-		      dirtree
-		      company
-		      company-go
-		      )
-  "A list of packages to ensure are installed at launch.")
-
-(dolist (p my-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
