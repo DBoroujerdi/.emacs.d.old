@@ -31,3 +31,6 @@
 (depends-on "company-go")
 (depends-on "yaml-mode")
 (depends-on "twittering-mode")
+(depends-on "circe")
+(depends-on "go-eldoc")
+(depends-on "flymake-puppet")
