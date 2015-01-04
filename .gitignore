@@ -3,3 +3,5 @@ vendor/
 elpa/
 auto-save-list/
 session.*
+.cask/
+ido.last
