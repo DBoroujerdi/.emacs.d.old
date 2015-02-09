@@ -34,3 +34,4 @@
 (depends-on "circe")
 (depends-on "go-eldoc")
 (depends-on "flymake-puppet")
+(depends-on "sx")
