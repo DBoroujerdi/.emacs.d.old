@@ -5,3 +5,6 @@ auto-save-list/
 session.*
 .cask/
 ido.last
+.sx/
+url/
+#*
