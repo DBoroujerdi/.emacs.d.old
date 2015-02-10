@@ -89,7 +89,7 @@
 
 ;; ========= External .el files =========
 
-(load "~/.emacs.d/go.el")
+;; (load "~/.emacs.d/go.el")
 (load "~/.emacs.d/puppet.el")
 ;; (load "~/.emacs.d/scala.el")
 
