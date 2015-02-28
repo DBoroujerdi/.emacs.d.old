@@ -21,7 +21,7 @@
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
 
-(setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 200)))
+(setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
 
 ;; load bin files onto patch
 (add-to-list 'load-path "~/bin")
@@ -50,7 +50,7 @@
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 
-(set-default-font "monaco 10")
+(set-default-font "monaco 12")
 
 
 ;; ========= Required Packages =========
@@ -89,7 +89,7 @@
 
 ;; ========= External .el files =========
 
-;; (load "~/.emacs.d/go.el")
+(load "~/.emacs.d/go.el")
 (load "~/.emacs.d/puppet.el")
 ;; (load "~/.emacs.d/scala.el")
 
@@ -146,3 +146,10 @@ directory to make multiple eshell windows easier."
 
 ;; Allow hash to be entered  
 (global-set-key (kbd "M-3") '(lambda () (interactive) (insert "#")))
+
+;; company mode in all buffers
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; only for OSX - loads path
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))

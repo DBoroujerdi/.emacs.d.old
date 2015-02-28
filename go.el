@@ -1,12 +1,12 @@
 
 ;; ========= Golang ================
 
-(setenv "GOPATH" "~/git/go")
-(setenv "PATH" (concat (getenv "PATH") ":" "~/git/go/bin"))
+(setenv "GOPATH" "~/dev/go")
+(setenv "PATH" (concat (getenv "PATH") ":" "~/dev/go/bin"))
 
 ;; golang (http://dominik.honnef.co/posts/2013/03/writing_go_in_emacs/)
 (add-to-list 'load-path "~/.emacs.d/vendor/go-mode")
-;;(require 'go-mode-load)
+;; (require 'go-mode-load)
 (require 'go-mode)
 (add-hook 'before-save-hook 'gofmt-before-save)
 
@@ -23,12 +23,16 @@
 			   (local-set-key (kbd "C-c C-k") 'godoc)))
 
 ;; go-flymake
-(add-to-list 'load-path "~/git/go/src/github.com/dougm/goflymake")
-(require 'go-flymake)
+;; (add-to-list 'load-path "~/dev/go/src/github.com/dougm/goflymake")
+;; (require 'go-flymake)
+
+;; go-flycheck
+(add-to-list 'load-path "~/dev/go/src/github.com/dougm/goflymake")
+(require 'go-flycheck)
 
 ;; auto-completion
 
-(add-to-list 'load-path "~/git/go/src/github.com/nsf/gocode/emacs-company")
+(add-to-list 'load-path "~/dev/go/src/github.com/nsf/gocode/emacs-company")
 (require 'company-go)
 
 (add-hook 'go-mode-hook (lambda ()

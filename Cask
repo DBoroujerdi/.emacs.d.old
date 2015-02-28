@@ -35,3 +35,5 @@
 (depends-on "go-eldoc")
 (depends-on "flymake-puppet")
 (depends-on "sx")
+(depends-on "flycheck")
+(depends-on "exec-path-from-shell")
