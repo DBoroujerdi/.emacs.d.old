@@ -37,3 +37,4 @@
 (depends-on "sx")
 (depends-on "flycheck")
 (depends-on "exec-path-from-shell")
+(depends-on "elixir-mode")
