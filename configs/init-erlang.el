@@ -21,6 +21,3 @@
 (require 'erlang-flymake)
 
 (add-to-list 'ac-modes 'erlang-mode)
-
-
-
