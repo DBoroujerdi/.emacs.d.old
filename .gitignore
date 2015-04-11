@@ -9,3 +9,5 @@ ido.last
 url/
 #*
 *#
+eshell/
+ac-comphist.dat
