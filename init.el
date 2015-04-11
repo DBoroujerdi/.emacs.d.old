@@ -4,6 +4,10 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; should update Cask file after new packages are installed manually
+(require 'pallet)
+(pallet-mode t)
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa"      . "http://melpa.milkbox.net/packages/") t)
