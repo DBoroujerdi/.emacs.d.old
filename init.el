@@ -91,6 +91,7 @@
    "init-osx"
    "init-erlang"
    "init-go"
+   "init-elisp"
    ;;   "init-puppet"
    ;;   "init-scala"
    ))
