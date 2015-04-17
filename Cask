@@ -49,6 +49,7 @@
 (depends-on "shut-up")
 (depends-on "smartparens")
 (depends-on "smex")
+(depends-on "spotify")
 (depends-on "sx")
 (depends-on "tracking")
 (depends-on "tree-mode")
