@@ -49,6 +49,7 @@
 (depends-on "s")
 (depends-on "shorten")
 (depends-on "shut-up")
+(depends-on "smart-mode-line")
 (depends-on "smartparens")
 (depends-on "smex")
 (depends-on "spotify")
