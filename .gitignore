@@ -11,3 +11,5 @@ url/
 *#
 eshell/
 ac-comphist.dat
+srecode-map.el
+semanticdb/
