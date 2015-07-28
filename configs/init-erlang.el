@@ -10,9 +10,9 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs/.cask/24.4.1/elpa/auto-complete-20150201.150/dict/")
 (ac-config-default)
 
-(setq load-path (cons (concat erlang_home "lib/tools-2.7.1/emacs")
+(setq load-path (cons (concat erlang_home "lib/tools-2.7.2/emacs")
 		      load-path))
-(setq erlang-root-dir "/usr/lib64/erlang/")
+(setq erlang-root-dir erlang_home)
 (setq exec-path (cons (concat erlang_home "bin") exec-path))
 (require 'erlang-start)
 
