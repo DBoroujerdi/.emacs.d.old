@@ -91,8 +91,14 @@
    "init-markdown"
    "init-osx"
    "init-erlang"
-   "init-go"
+   ;;    "init-go"
    "init-elisp"
    ;;   "init-puppet"
    ;;   "init-scala"
    ))
+
+
+
+
+
+
