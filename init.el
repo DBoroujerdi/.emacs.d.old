@@ -95,10 +95,5 @@
    "init-elisp"
    ;;   "init-puppet"
    ;;   "init-scala"
+   "init-ess"
    ))
-
-
-
-
-
-

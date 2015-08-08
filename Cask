@@ -15,6 +15,8 @@
 (depends-on "drag-stuff")
 (depends-on "elixir-mode")
 (depends-on "epl")
+(depends-on "ess")
+(depends-on "ess-R-data-view")
 (depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "f")
