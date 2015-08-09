@@ -87,7 +87,7 @@
    "keys"
    "init-helm"
    "init-irc"
-   "init-company"
+   ;;"init-company"
    "init-markdown"
    "init-osx"
    "init-erlang"
