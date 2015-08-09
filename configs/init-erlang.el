@@ -11,7 +11,8 @@
 
 (require 'auto-complete-config)
 
-(add-to-list 'ac-dictionary-directories "~/.emacs/.cask/24.4.1/elpa/auto-complete-20150201.150/dict/")
+;; TODO need to fix this hard coding
+(add-to-list 'ac-dictionary-directories "~/.emacs/.cask/24.5.1/elpa/auto-complete-20150201.150/dict/")
 (ac-config-default)
 
 (setq load-path (cons (concat erlang_home tools_dir)
