@@ -50,7 +50,7 @@
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 
-(set-default-font "monaco 12")
+(set-default-font "monaco 10")
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
