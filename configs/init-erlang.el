@@ -1,18 +1,15 @@
 
 
-(defvar erlang_home
-  (if (eq system-type 'darwin)
-      "/opt/local/lib/erlang/"
-    "/usr/lib64/erlang/"))
+(defvar erlang_home "/home/dborouje/apps/erlang_17_5/")
 
-(defvar tools_dir
-  (if (eq system-type 'darwin)
-      "lib/tools-2.7.2/emacs" "lib/tools-2.7.1/emacs"))
+(defvar tools_dir "lib/tools-2.7.2/emacs")
+
+(setq erlang-root-dir "/home/dborouje/apps/erlang_17_5/")
 
 (require 'auto-complete-config)
 
 ;; TODO need to fix this hard coding
-(add-to-list 'ac-dictionary-directories "~/.emacs/.cask/24.5.1/elpa/auto-complete-20150201.150/dict/")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/.cask/24.5.1/elpa/auto-complete-20150408.1132/dict/")
 (ac-config-default)
 
 (setq load-path (cons (concat erlang_home tools_dir)
