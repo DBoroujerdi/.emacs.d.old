@@ -1,8 +1,10 @@
+(source "melpa" "http://melpa.milkbox.net/packages/")
 (source gnu)
 (source melpa)
 
 (depends-on "async")
 (depends-on "auto-complete")
+(depends-on "bash-completion")
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "circe")
