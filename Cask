@@ -4,7 +4,6 @@
 
 (depends-on "async")
 (depends-on "auto-complete")
-(depends-on "bash-completion")
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "circe")
