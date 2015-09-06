@@ -75,6 +75,10 @@
 ;;   'bash-completion-dynamic-complete)
 
 
+(require 'golden-ratio)
+
+(golden-ratio-mode 1)
+
 ;; ========= Load other config files =========
 
 

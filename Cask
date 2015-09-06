@@ -31,6 +31,7 @@
 (depends-on "git-rebase-mode")
 (depends-on "go-eldoc")
 (depends-on "go-mode")
+(depends-on "golden-ratio")
 (depends-on "helm")
 (depends-on "helm-spotify")
 (depends-on "htmlize")
