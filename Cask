@@ -67,6 +67,7 @@
 (depends-on "tree-mode")
 (depends-on "twittering-mode")
 (depends-on "use-package")
+(depends-on "warm-night-theme")
 (depends-on "web-mode")
 (depends-on "windata")
 (depends-on "xkcd")
