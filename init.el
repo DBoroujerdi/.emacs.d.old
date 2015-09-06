@@ -53,6 +53,8 @@
 
 (require 'functions)
 (require 'keys)
+(require 'theme)
+(require 'init-ido)
 (require 'init-elisp)
 (require 'init-markdown)
 (require 'init-ess)

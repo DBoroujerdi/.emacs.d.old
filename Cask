@@ -36,6 +36,8 @@
 (depends-on "helm-spotify")
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
+(depends-on "ido-ubiquitous")
+(depends-on "ido-vertical-mode")
 (depends-on "lcs")
 (depends-on "let-alist")
 (depends-on "lui")
