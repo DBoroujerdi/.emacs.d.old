@@ -1,5 +1,7 @@
+(source "elpa" "http://elpa.gnu.org/packages/")
 (source "melpa" "http://melpa.milkbox.net/packages/")
 (source gnu)
+(source marmalade)
 (source melpa)
 
 (depends-on "async")
@@ -13,6 +15,7 @@
 (depends-on "diminish")
 (depends-on "dirtree")
 (depends-on "drag-stuff")
+(depends-on "edts")
 (depends-on "elixir-mode")
 (depends-on "epl")
 (depends-on "ess")
