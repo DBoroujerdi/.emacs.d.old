@@ -27,8 +27,6 @@
 (depends-on "flycheck-cask")
 (depends-on "flymake-easy")
 (depends-on "flymake-puppet")
-(depends-on "git-commit-mode")
-(depends-on "git-rebase-mode")
 (depends-on "go-eldoc")
 (depends-on "go-mode")
 (depends-on "golden-ratio")
