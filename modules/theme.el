@@ -43,4 +43,8 @@
 
 (golden-ratio-mode 1)
 
+(require 'smex) ; Not needed if you use package.el
+(smex-initialize) ; Can be omitted. This might cause a (minimal) delay
+                                        ; when Smex is auto-initialized on its first run.
+
 (provide 'theme)
