@@ -30,7 +30,7 @@
 
 (load-theme 'warm-night t)
 
-;; (sml/setup)
+(sml/setup)
 
 ;; (autoload 'bash-completion-dynamic-complete 
 ;;   "bash-completion"
