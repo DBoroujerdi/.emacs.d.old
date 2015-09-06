@@ -10,3 +10,5 @@
 ;; other useful things
 (add-to-list 'auto-mode-alist '("\\Vagrantfile\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+
+(provide 'init-puppet)

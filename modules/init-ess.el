@@ -4,3 +4,5 @@
 ;; C-c C-l   -- Load the current source file via source() into R process
 
 (require 'ess-site)
+
+(provide 'init-ess)

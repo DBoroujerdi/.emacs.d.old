@@ -22,3 +22,4 @@
                   (t (self-insert-command (or arg 1)))))
 
 
+(provide 'keys)

@@ -20,8 +20,6 @@ directory to make multiple eshell windows easier."
 (global-set-key (kbd "C-!") 'shell-here)
 
 
-
-;; Formatting XML
 (defun xml-format ()
   (interactive)
   (save-excursion
@@ -29,9 +27,13 @@ directory to make multiple eshell windows easier."
     )
   )
 
+
 (defun json-format ()
   (interactive)
   (save-excursion
     (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)
     )
   )
+
+
+(provide 'functions)

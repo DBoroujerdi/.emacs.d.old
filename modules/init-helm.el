@@ -22,3 +22,5 @@
       helm-ff-file-name-history-use-recentf t)
 
 (helm-mode 1)
+
+(provide 'init-helm)

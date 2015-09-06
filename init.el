@@ -75,31 +75,26 @@
 
 ;; ========= Load other config files =========
 
-;; A function to load config files
-;; setting up the configs dir
-(setq emacs-config-dir (file-name-directory
-                        (or (buffer-file-name) load-file-name)))
 
-(defconst *emacs-config-dir* (concat emacs-config-dir "/configs/" ""))
+(defvar current-user
+      (getenv
+       (if (equal system-type 'windows-nt) "USERNAME" "USER")))
 
-(defun load-config-files (files)
-  (dolist (f files)
-    (load (expand-file-name
-           (concat *emacs-config-dir* f)))
-    (message "Loaded config file: %s" file)))
+(message "Running as user %s .." current-user)
 
-(load-config-files 
- '("functions"
-   "keys"
-   "init-helm"
-   "init-irc"
-   ;;"init-company"
-   "init-markdown"
-   "init-osx"
-   "init-erlang"
-   ;;    "init-go"
-   "init-elisp"
-   ;;   "init-puppet"
-   ;;   "init-scala"
-   "init-ess"
-   ))
+(defvar root-dir "~/.emacs.d/")
+
+(defvar modules-dir (expand-file-name  "modules/" root-dir)
+  "This directory houses all of the user  modules.")
+
+(message "Added %s to load-path" modules-dir)
+
+(add-to-list 'load-path modules-dir)
+
+(require 'functions)
+(require 'keys)
+(require 'init-elisp)
+(require 'init-markdown)
+(require 'init-ess)
+(require 'init-helm)
+(require 'init-erlang)
