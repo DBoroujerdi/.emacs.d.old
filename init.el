@@ -19,6 +19,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+(global-auto-revert-mode t)
 
 ;; ===== Shell =====
 
