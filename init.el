@@ -58,5 +58,5 @@
 (require 'init-elisp)
 (require 'init-markdown)
 (require 'init-ess)
-(require 'init-helm)
+;;(require 'init-helm)
 (require 'init-erlang)
