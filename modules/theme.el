@@ -28,9 +28,9 @@
 (add-hook 'after-save-hook
 	  'executable-make-buffer-file-executable-if-script-p)
 
-(load-theme 'warm-night t)
+;; (load-theme 'warm-night t)
 
-(sml/setup)
+;; (sml/setup)
 
 ;; (autoload 'bash-completion-dynamic-complete 
 ;;   "bash-completion"
