@@ -4,6 +4,7 @@
 (source marmalade)
 (source melpa)
 
+(depends-on "alchemist")
 (depends-on "async")
 (depends-on "auto-complete")
 (depends-on "bind-key")
