@@ -15,4 +15,7 @@
 (ido-vertical-mode 1)
 (setq ido-vertical-define-keys 'C-n-and-C-p-only)
 
+(setq ido-enable-flex-matching t)
+
 (provide 'init-ido)
+
