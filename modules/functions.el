@@ -23,17 +23,13 @@ directory to make multiple eshell windows easier."
 (defun xml-format ()
   (interactive)
   (save-excursion
-    (shell-command-on-region (mark) (point) "xmllint --format -" (buffer-name) t)
-    )
-  )
+    (shell-command-on-region (mark) (point) "xmllint --format -" (buffer-name) t)))
 
 
 (defun json-format ()
   (interactive)
   (save-excursion
-    (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)
-    )
-  )
+    (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)))
 
 
 (provide 'functions)
