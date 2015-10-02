@@ -1,7 +1,7 @@
 
-(defvar erlang_home "/home/dborouje/apps/erlang/")
+(defvar erlang_home "~/apps/erlang/")
 
-(setq load-path (cons "/home/dborouje/apps/erlang/lib/tools-*/emacs/" load-path))
+(setq load-path (cons "~/apps/erlang/lib/tools-*/emacs/" load-path))
 
 (setq erlang-root-dir erlang_home)
 (setq exec-path (cons (concat erlang_home "bin") exec-path))
