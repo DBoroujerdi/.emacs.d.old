@@ -38,6 +38,7 @@
 (depends-on "ido-ubiquitous")
 (depends-on "ido-vertical-mode")
 (depends-on "lcs")
+(depends-on "less-css-mode")
 (depends-on "let-alist")
 (depends-on "lui")
 (depends-on "magit")
