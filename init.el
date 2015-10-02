@@ -34,6 +34,9 @@
 (setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
 
 
+;; delete trailing whitespace on save
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; ========= Load other config files =========
 
 
