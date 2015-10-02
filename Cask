@@ -10,6 +10,7 @@
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "circe")
+(depends-on "column-marker")
 (depends-on "company")
 (depends-on "company-go")
 (depends-on "dash")
