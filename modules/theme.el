@@ -9,11 +9,11 @@
 (blink-cursor-mode 0)
 
 (when (display-graphic-p)
-  (scroll-bar-mode 0)) 
+  (scroll-bar-mode 0))
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(set-default-font "monofur 17")
+(set-default-font "monofur 16")
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
@@ -31,7 +31,7 @@
 
 ;; (sml/setup)
 
-;; (autoload 'bash-completion-dynamic-complete 
+;; (autoload 'bash-completion-dynamic-complete
 ;;   "bash-completion"
 ;;   "BASH completion hook")
 ;; (add-hook 'shell-dynamic-complete-functions
