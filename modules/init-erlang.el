@@ -14,6 +14,7 @@
 
 (provide 'init-erlang)
 
+(add-hook 'erlang-mode-hook (lambda () (highlight-symbol-mode 1)))
 
 (add-hook 'after-init-hook 'my-after-init-hook)
 (defun my-after-init-hook ()
