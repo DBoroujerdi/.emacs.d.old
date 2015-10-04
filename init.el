@@ -64,3 +64,4 @@
 (require 'init-ess)
 ;;(require 'init-helm)
 (require 'init-erlang)
+(require 'init-yasnippet)

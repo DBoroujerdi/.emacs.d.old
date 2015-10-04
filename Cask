@@ -82,3 +82,4 @@
 (depends-on "xkcd")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
+(depends-on "yasnippet-bundle")
