@@ -1,4 +1,4 @@
-%% -*- mode: org -*-
+# -*- mode: org -*-
 
 * .emacs.d
 
@@ -12,8 +12,7 @@
 | M-f       | Move forward on word    |
 | M-b       | Move backwards one word |
 |           |                         |
-  
+
 
 
 ** Elisp
-
