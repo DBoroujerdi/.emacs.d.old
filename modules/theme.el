@@ -13,7 +13,7 @@
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(set-default-font "monofur 16")
+(set-default-font "monofur 13")
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
