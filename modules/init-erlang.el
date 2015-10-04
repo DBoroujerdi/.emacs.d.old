@@ -16,6 +16,13 @@
 
 (add-hook 'erlang-mode-hook (lambda () (highlight-symbol-mode 1)))
 
+(require 'column-marker)
+(add-hook 'erlang-mode-hook
+          (lambda () (interactive) (column-marker-1 80)))
+
+
+
+
 ;; (add-hook 'after-init-hook 'my-after-init-hook)
 ;; (defun my-after-init-hook ()
 ;;   (require 'edts-start))

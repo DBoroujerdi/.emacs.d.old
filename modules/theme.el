@@ -42,9 +42,4 @@
 (golden-ratio-mode 0)
 
 
-(require 'column-marker)
-(add-hook 'foo-mode-hook
-          (lambda () (interactive) (column-marker-1 80)))
-
-
 (provide 'theme)
