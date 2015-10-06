@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: small comment
+# key: scom
+# binding: direct-keybinding
+# --
+%% $0
+%%

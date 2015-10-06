@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: comment
-# key: comm
+# name: big comment
+# key: bcom
 # --
 %%--------------------------------------------------------------------
 %% $0
