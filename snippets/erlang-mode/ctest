@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: common test
+# key: ctest
+# --
+$1_test(_Config) ->
+    $0
+    ok.
