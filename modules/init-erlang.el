@@ -21,6 +21,8 @@
           (lambda () (interactive) (column-marker-1 80)))
 
 
+(add-to-list 'auto-mode-alist '("\\.term\\'" . erlang-mode))
+(add-to-list 'auto-mode-alist '("\\.terms\\'" . erlang-mode))
 
 
 ;; (add-hook 'after-init-hook 'my-after-init-hook)
