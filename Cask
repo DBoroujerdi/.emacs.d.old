@@ -16,6 +16,8 @@
 (depends-on "dash")
 (depends-on "diminish")
 (depends-on "dirtree")
+(depends-on "docker")
+(depends-on "dockerfile-mode")
 (depends-on "drag-stuff")
 (depends-on "edts")
 (depends-on "elixir-mode")
