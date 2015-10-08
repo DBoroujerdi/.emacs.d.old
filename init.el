@@ -41,6 +41,7 @@
 ;;=============== Global Modes ===============
 
 (docker-global-mode 1)
+(projectile-global-mode)
 
 
 ;; ========= Load other config files =========
