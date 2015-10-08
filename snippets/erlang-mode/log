@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: log info
+# key: log
+# --
+lager:info("$0"),

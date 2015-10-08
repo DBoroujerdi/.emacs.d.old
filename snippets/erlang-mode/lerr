@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: lager error
+# key: lerr
+# --
+lager:error("$1 ~p", [$0]),
