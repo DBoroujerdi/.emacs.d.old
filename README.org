@@ -1,3 +1,14 @@
 # -*- mode: org -*-
 
 * .emacs.d
+
+
+** Useful function
+
+
+Start mode when file that matches Regex is opened.
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'auto-mode-alist '("Dockerfile.*\\'" . dockerfile-mode))
+(add-to-list 'auto-mode-alist '("\\.term\\'" . erlang-mode))
+#+END_SRC
