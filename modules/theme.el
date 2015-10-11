@@ -13,6 +13,9 @@
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
+;; no initial scratch text
+(setq initial-scratch-message)
+
 (set-frame-font "monofur 16" t t)
 
 ;; window size
