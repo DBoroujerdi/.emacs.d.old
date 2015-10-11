@@ -6,12 +6,17 @@
 ;; Disable toolbar
 (tool-bar-mode -1)
 
+;; solid cursor
 (blink-cursor-mode 0)
 
+;; no scroll bar
 (when (display-graphic-p)
   (scroll-bar-mode 0))
 
+;; no tool bar
 (tool-bar-mode 0)
+
+;; no menu bar
 (menu-bar-mode 0)
 
 ;; no default start up screen
