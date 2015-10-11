@@ -25,6 +25,10 @@
 (add-to-list 'auto-mode-alist '("\\.term\\'" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.terms\\'" . erlang-mode))
 
+(setq erlang-indent-level 2)
+
+(add-hook 'erlang-mode-hook 'aggressive-indent-mode)
+
 
 ;; (add-hook 'after-init-hook 'my-after-init-hook)
 ;; (defun my-after-init-hook ()
