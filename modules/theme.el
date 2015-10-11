@@ -13,6 +13,10 @@
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
+
+;; no default start up screen
+(setq inhibit-startup-screen t)
+
 ;; no initial scratch text
 (setq initial-scratch-message)
 
