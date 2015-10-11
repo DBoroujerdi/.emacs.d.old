@@ -16,3 +16,5 @@ semanticdb/
 *.elc
 tramp
 edts/
+projectile*
+smex-items
