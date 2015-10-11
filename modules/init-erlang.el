@@ -15,6 +15,7 @@
 (provide 'init-erlang)
 
 (add-hook 'erlang-mode-hook (lambda () (highlight-symbol-mode 1)))
+(add-hook 'erlang-mode-hook 'flyspell-prog-mode)
 
 (require 'column-marker)
 (add-hook 'erlang-mode-hook
