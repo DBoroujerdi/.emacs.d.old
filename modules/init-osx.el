@@ -1,4 +1,4 @@
-;; Allow hash to be entered  
+;; Allow hash to be entered
 (global-set-key (kbd "M-3") '(lambda () (interactive) (insert "#")))
 
 
@@ -6,5 +6,6 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+(setq ispell-program-name "/usr/local/bin/ispell")
 
 (provide 'init-osx)

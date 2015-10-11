@@ -41,7 +41,7 @@
 ;;=============== Global Modes ===============
 
 (docker-global-mode 1)
-(projectile-global-mode)
+(projectile-global-mode 1)
 
 
 ;; ========= Load other config files =========
@@ -66,10 +66,11 @@
 (require 'keys)
 (require 'theme)
 (require 'init-misc)
-(require 'init-ido)
 (require 'init-elisp)
 (require 'init-markdown)
 (require 'init-ess)
 ;;(require 'init-helm)
 (require 'init-erlang)
 (require 'init-yasnippet)
+(require 'init-ido)
+(require 'init-osx)
