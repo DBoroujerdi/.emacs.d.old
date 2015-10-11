@@ -16,6 +16,7 @@
 (depends-on "dash")
 (depends-on "diminish")
 (depends-on "dirtree")
+(depends-on "discover")
 (depends-on "docker")
 (depends-on "dockerfile-mode")
 (depends-on "drag-stuff")
