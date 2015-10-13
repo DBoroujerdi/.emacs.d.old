@@ -22,6 +22,9 @@
           (lambda () (interactive) (column-marker-1 80)))
 
 
+;; tell ido to ignore beam files when completions
+(add-to-list 'completion-ignored-extensions ".beam")
+
 (add-to-list 'auto-mode-alist '("\\.term\\'" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.terms\\'" . erlang-mode))
 
