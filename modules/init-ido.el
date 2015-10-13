@@ -17,5 +17,8 @@
 
 (setq ido-enable-flex-matching t)
 
-(provide 'init-ido)
+(setq ido-use-filename-at-point 'guess)
 
+(setq ido-ignore-extensions t)
+
+(provide 'init-ido)
