@@ -14,6 +14,7 @@
 | M-C \     | Indent code in region           |
 | M-g c     | Go to char                      |
 | C-h m     | Describe active modes in buffer |
+| M-X       | Major mode commands             |
 |           |                                 |
 
 
