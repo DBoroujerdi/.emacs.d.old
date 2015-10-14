@@ -64,6 +64,7 @@
 (require 'functions)
 (require 'keys)
 (require 'theme)
+(require 'init-project)
 (require 'init-misc)
 (require 'init-elisp)
 (require 'init-markdown)
