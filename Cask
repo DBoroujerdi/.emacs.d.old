@@ -42,6 +42,8 @@
 (depends-on "idle-highlight-mode")
 (depends-on "ido-ubiquitous")
 (depends-on "ido-vertical-mode")
+(depends-on "imenu+")
+(depends-on "js2-mode")
 (depends-on "lcs")
 (depends-on "less-css-mode")
 (depends-on "let-alist")
