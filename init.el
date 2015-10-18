@@ -19,6 +19,11 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+;; sets $MANPATH, $PATH and exec-path from your shell, but only on OS X.
+;; https://github.com/purcell/exec-path-from-shell
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
 (global-auto-revert-mode t)
 
 ;; ===== Shell =====
