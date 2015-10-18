@@ -72,4 +72,5 @@
 (require 'init-erlang)
 (require 'init-yasnippet)
 (require 'init-ido)
-(require 'init-osx)
+(if (eq system-type 'darwin)
+    (require 'init-osx))
