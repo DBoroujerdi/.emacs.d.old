@@ -76,6 +76,7 @@
 (require 'init-ess)
 (require 'init-erlang)
 (require 'init-yasnippet)
+;; (require 'init-scala)
 (require 'init-ido)
 (if (eq system-type 'darwin)
     (require 'init-osx))

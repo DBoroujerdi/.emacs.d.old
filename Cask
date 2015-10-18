@@ -22,6 +22,7 @@
 (depends-on "drag-stuff")
 (depends-on "edts")
 (depends-on "elixir-mode")
+(depends-on "ensime")
 (depends-on "epl")
 (depends-on "ess")
 (depends-on "ess-R-data-view")
