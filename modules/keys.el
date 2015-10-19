@@ -33,4 +33,7 @@
 
 (global-set-key (kbd "C-u") 'imenu)
 
+(global-set-key (kbd "M-y") 'kill-ring-ido)
+
+
 (provide 'keys)

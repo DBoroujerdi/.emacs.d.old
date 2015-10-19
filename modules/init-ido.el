@@ -24,4 +24,6 @@
 ;; allow configuring of ignore extensions
 (setq ido-ignore-extensions t)
 
+(require 'kill-ring-ido)
+
 (provide 'init-ido)
