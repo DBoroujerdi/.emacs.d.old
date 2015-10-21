@@ -15,6 +15,7 @@
 | M-g c     | Go to char                      |
 | C-h m     | Describe active modes in buffer |
 | M-X       | Major mode commands             |
+| M-;       | Comment/Un-Comment              |
 |           |                                 |
 
 
