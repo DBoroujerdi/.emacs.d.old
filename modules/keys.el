@@ -35,5 +35,8 @@
 
 (global-set-key (kbd "M-y") 'kill-ring-ido)
 
+;; duplicate line
+(global-set-key "\C-c\C-d" "\C-a\C- \C-n\M-w\C-y")
+
 
 (provide 'keys)
