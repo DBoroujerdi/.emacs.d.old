@@ -8,4 +8,7 @@
 ;; no tabs allowed
 (setq-default indent-tabs-mode nil)
 
+;; enable command log - logs commands!
+(require 'command-log-mode)
+
 (provide 'init-misc)

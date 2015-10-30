@@ -12,6 +12,7 @@
 (depends-on "cask")
 (depends-on "circe")
 (depends-on "column-marker")
+(depends-on "command-log-mode")
 (depends-on "company")
 (depends-on "company-go")
 (depends-on "dash")
