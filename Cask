@@ -69,6 +69,7 @@
 (depends-on "request")
 (depends-on "restclient")
 (depends-on "s")
+(depends-on "scala-mode")
 (depends-on "shorten")
 (depends-on "shut-up")
 (depends-on "smart-mode-line")
