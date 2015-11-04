@@ -60,6 +60,8 @@
 (depends-on "nyan-mode")
 (depends-on "package-build")
 (depends-on "pallet")
+(depends-on "php+-mode")
+(depends-on "php-mode")
 (depends-on "pkg-info")
 (depends-on "popup")
 (depends-on "popwin")
