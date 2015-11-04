@@ -18,4 +18,18 @@
 (setq ediff-split-window-function 'split-window-horizontally)
 ;; TODO more ediff config to add.. http://emacswiki.org/emacs/EdiffMode
 
+
+;; gnus
+(setq user-mail-address	"daniel.boroujerdi@gmail.com"
+      user-full-name	"Daniel Boroujerdi")
+(setq gnus-select-method '(nntp "news.gwene.org"))
+
+;; elfeed
+(setq elfeed-feeds
+      '(
+        "http://www.manolosandtinytoes.com/feed"
+        "http://blog.erlware.org/rss/"
+        "http://nullprogram.com/feed/"
+        ))
+
 (provide 'init-misc)
