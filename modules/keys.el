@@ -38,5 +38,6 @@
 ;; duplicate line
 (global-set-key "\C-c\C-d" "\C-a\C- \C-n\M-w\C-y")
 
+(global-set-key (kbd "C-x z") 'toggle-windows-split)
 
 (provide 'keys)
