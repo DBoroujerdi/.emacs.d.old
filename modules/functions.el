@@ -62,7 +62,7 @@ directory to make multiple eshell windows easier."
   (interactive)
   (if (not (window-minibuffer-p (selected-window)))
       (progn
-        (if (< 1 (count-windows))
+        (if (< 2 (count-windows))
             (progn
               (window-configuration-to-register ?u)
               (delete-other-windows))
