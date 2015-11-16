@@ -46,6 +46,7 @@
 (depends-on "ido-vertical-mode")
 (depends-on "ido-yes-or-no")
 (depends-on "imenu+")
+(depends-on "imenu-anywhere")
 (depends-on "js2-mode")
 (depends-on "lcs")
 (depends-on "less-css-mode")
