@@ -53,6 +53,7 @@
 (depends-on "lui")
 (depends-on "magit")
 (depends-on "markdown-mode")
+(depends-on "material-theme")
 (depends-on "multi")
 (depends-on "multiple-cursors")
 (depends-on "neotree")
