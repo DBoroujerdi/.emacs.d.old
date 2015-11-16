@@ -38,7 +38,6 @@
 (depends-on "flymake-puppet")
 (depends-on "go-eldoc")
 (depends-on "go-mode")
-(depends-on "golden-ratio")
 (depends-on "highlight-symbol")
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
