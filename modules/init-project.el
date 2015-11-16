@@ -10,6 +10,6 @@
 (setq projectile-switch-project-action 'projectile-dired)
 
 ;; automatically change neo tree when changing projects
-(setq projectile-switch-project-action 'neotree-projectile-action)
+;; (setq projectile-switch-project-action 'neotree-projectile-action)
 
 (provide 'init-project)
