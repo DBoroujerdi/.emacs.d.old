@@ -40,9 +40,10 @@
 
 (global-set-key (kbd "C-x z") 'toggle-windows-split)
 
+;; meta arrow to move
 (windmove-default-keybindings 'meta)
 
-
+;; another movement method
 (global-set-key (kbd "C-c <left>")  'windmove-left)
 (global-set-key (kbd "C-c <right>") 'windmove-right)
 (global-set-key (kbd "C-c <up>")    'windmove-up)
