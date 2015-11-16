@@ -56,4 +56,18 @@ directory to make multiple eshell windows easier."
   (move-line (if (null n) 1 n)))
 
 
+;; Toggle between split windows and a single window
+(defun toggle-windows-split()
+  "Switch back and forth between one window and whatever split of windows we might have in the frame. The idea is to maximize the current buffer, while being able to go back to the previous split of windows in the frame simply by calling this command again."
+  (interactive)
+  (if (not (window-minibuffer-p (selected-window)))
+      (progn
+        (if (< 2 (count-windows))
+            (progn
+              (window-configuration-to-register ?u)
+              (delete-other-windows))
+          (jump-to-register ?u))))
+  (my-iswitchb-close))
+
+
 (provide 'functions)
