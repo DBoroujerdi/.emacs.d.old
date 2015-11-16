@@ -25,7 +25,11 @@
 ;; no initial scratch text
 (setq initial-scratch-message)
 
-(set-frame-font "monofur 16" t t)
+;; set font
+(set-frame-font "monofur 13" t t)
+
+;; for new frames and emacs client..
+(setq default-frame-alist '((font . "monofur 13")))
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
