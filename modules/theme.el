@@ -33,6 +33,10 @@
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
+;; new window sizes
+(setq default-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
+;; width  -> num characters
+;; height -> num lines
 
 ;; (require 'dirtree)
 
