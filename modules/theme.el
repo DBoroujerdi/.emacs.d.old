@@ -58,8 +58,8 @@
 ;;   'bash-completion-dynamic-complete)
 
 
-(require 'golden-ratio)
-(golden-ratio-mode 0)
+;; (require 'golden-ratio)
+;; (golden-ratio-mode 0)
 
 
 (provide 'theme)
