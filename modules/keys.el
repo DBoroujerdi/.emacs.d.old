@@ -49,4 +49,8 @@
 (global-set-key (kbd "C-c <up>")    'windmove-up)
 (global-set-key (kbd "C-c <down>")  'windmove-down)
 
+
+;; make a new frame
+(global-set-key (kbd "M-n") 'make-frame)
+
 (provide 'keys)
