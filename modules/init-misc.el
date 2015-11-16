@@ -32,4 +32,7 @@
         "http://nullprogram.com/feed/"
         ))
 
+;; typed text replaces selected
+(delete-selection-mode 1)
+
 (provide 'init-misc)
