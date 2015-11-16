@@ -1,3 +1,5 @@
+(message "loading theme.el..")
+
 ;; ========== Look & Feel =========
 
 ;; Themes
@@ -26,10 +28,10 @@
 (setq initial-scratch-message)
 
 ;; set font
-(set-frame-font "monofur 13" t t)
+(set-frame-font "monofur 14" t t)
 
 ;; for new frames and emacs client..
-(setq default-frame-alist '((font . "monofur 13")))
+(setq default-frame-alist '((font . "monofur 14")))
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
@@ -58,8 +60,4 @@
 ;;   'bash-completion-dynamic-complete)
 
 
-;; (require 'golden-ratio)
-;; (golden-ratio-mode 0)
-
-
-(provide 'theme)
+(provide 'init-theme)

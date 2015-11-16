@@ -68,7 +68,7 @@
 
 (require 'functions)
 (require 'keys)
-(require 'theme)
+(require 'init-theme)
 (require 'init-project)
 (require 'init-misc)
 (require 'init-elisp)
