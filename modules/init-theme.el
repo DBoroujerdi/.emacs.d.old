@@ -27,6 +27,9 @@
 ;; no initial scratch text
 (setq initial-scratch-message)
 
+;; disable scroll bar
+(scroll-bar-mode -1)
+
 ;; set font
 (set-frame-font "Source Code Pro 12" t t)
 
