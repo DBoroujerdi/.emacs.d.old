@@ -35,4 +35,8 @@
 ;; typed text replaces selected
 (delete-selection-mode 1)
 
+
+(custom-set-variables
+ '(markdown-command "/usr/bin/pandoc"))
+
 (provide 'init-misc)
