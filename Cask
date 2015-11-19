@@ -83,6 +83,7 @@
 (depends-on "sos")
 (depends-on "spotify")
 (depends-on "srefactor")
+(depends-on "sublime-themes")
 (depends-on "sx")
 (depends-on "tidy")
 (depends-on "tracking")
