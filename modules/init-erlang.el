@@ -29,7 +29,7 @@
 
 (setq erlang-indent-level 4)
 
-(add-hook 'erlang-mode-hook 'aggressive-indent-mode)
+;; (add-hook 'erlang-mode-hook 'aggressive-indent-mode)
 
 
 (add-hook 'after-init-hook 'edts-after-init-hook)
