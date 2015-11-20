@@ -19,7 +19,7 @@
 (setq ido-enable-flex-matching t)
 
 ;; start completion with word at cursor point
-(setq ido-use-filename-at-point 'guess)
+;; (setq ido-use-filename-at-point 'guess)
 
 ;; allow configuring of ignore extensions
 (setq ido-ignore-extensions t)
