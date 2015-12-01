@@ -21,7 +21,6 @@
         ((looking-at "\\s\)") (forward-char 1) (backward-list 1))
         (t (self-insert-command (or arg 1)))))
 
-
 ;; smex
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
@@ -49,8 +48,14 @@
 (global-set-key (kbd "C-c <up>")    'windmove-up)
 (global-set-key (kbd "C-c <down>")  'windmove-down)
 
-
 ;; make a new frame
 (global-set-key (kbd "M-n") 'make-frame)
+
+;; magit shortcuts
+(global-set-key (kbd "C-c s") 'magit-status)
+(global-set-key (kbd "C-c l") 'magit-log)
+(global-set-key (kbd "C-c c") 'magit-checkout)
+(global-set-key (kbd "C-c b") 'magit-blame)
+
 
 (provide 'keys)
