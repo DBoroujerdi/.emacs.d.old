@@ -58,4 +58,8 @@
 (global-set-key (kbd "C-c b") 'magit-blame)
 
 
+;; unset a keybinding
+;; (global-unset-key (kbd "C-x b"))
+
+
 (provide 'keys)
