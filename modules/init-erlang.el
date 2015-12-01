@@ -16,10 +16,13 @@
 (add-hook 'erlang-mode-hook (lambda () (highlight-symbol-mode 1)))
 (add-hook 'erlang-mode-hook 'flyspell-prog-mode)
 
-(require 'column-marker)
-(add-hook 'erlang-mode-hook
-          (lambda () (interactive) (column-marker-1 80)))
+(require 'fill-column-indicator)
 
+(setq-default fill-column 80)
+(setq-default fci-rule-width 1)
+(setq-default fci-rule-color "#686868")
+(add-hook 'erlang-mode-hook 'fci-mode)
+(fci-mode)
 
 ;; tell ido to ignore beam files when completions
 (add-to-list 'completion-ignored-extensions ".beam")
