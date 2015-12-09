@@ -24,6 +24,7 @@
 (depends-on "drag-stuff")
 (depends-on "edts")
 (depends-on "elfeed")
+(depends-on "elfeed-goodies")
 (depends-on "elixir-mode")
 (depends-on "ensime")
 (depends-on "epl")
