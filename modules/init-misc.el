@@ -36,6 +36,9 @@
 (delete-selection-mode 1)
 
 
+;; git
+(global-git-gutter-mode +1)
+
 (custom-set-variables
  '(markdown-command "/usr/bin/pandoc"))
 

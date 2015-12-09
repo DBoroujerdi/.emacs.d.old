@@ -37,6 +37,7 @@
 (depends-on "flycheck-cask")
 (depends-on "flymake-easy")
 (depends-on "flymake-puppet")
+(depends-on "git-gutter")
 (depends-on "go-eldoc")
 (depends-on "go-mode")
 (depends-on "highlight-symbol")
