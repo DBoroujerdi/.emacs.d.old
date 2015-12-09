@@ -26,6 +26,7 @@
 (depends-on "elfeed")
 (depends-on "elfeed-goodies")
 (depends-on "elixir-mode")
+(depends-on "elm-mode")
 (depends-on "ensime")
 (depends-on "epl")
 (depends-on "ess")
