@@ -49,7 +49,7 @@
 (global-set-key (kbd "C-c <down>")  'windmove-down)
 
 ;; make a new frame
-(global-set-key (kbd "M-n") 'make-frame)
+;; (global-set-key (kbd "M-n") 'make-frame)
 
 ;; magit shortcuts
 (global-set-key (kbd "C-c s") 'magit-status)
