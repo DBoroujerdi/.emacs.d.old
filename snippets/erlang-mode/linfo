@@ -1,5 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: lager info
-# key: linfo
-# --
-lager:info("$1 ~p", [$0]),

@@ -1,7 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: common test init
-# key: cinit
-# --
-init_per_suite(_Config) ->
-    $0
-    _Config.

@@ -1,5 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: lager debug
-# key: ldebug
-# --
-lager:debug("$1 ~p", [$0]),
