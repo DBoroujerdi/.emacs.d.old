@@ -52,8 +52,6 @@
 (add-hook 'after-save-hook
 	  'executable-make-buffer-file-executable-if-script-p)
 
-;; (load-theme 'warm-night t)
-
 ;; (sml/setup)
 
 ;; (autoload 'bash-completion-dynamic-complete
@@ -62,5 +60,6 @@
 ;; (add-hook 'shell-dynamic-complete-functions
 ;;   'bash-completion-dynamic-complete)
 
+(load-theme 'gruvbox t)
 
 (provide 'init-theme)
