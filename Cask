@@ -36,6 +36,7 @@
 (depends-on "expand-region")
 (depends-on "f")
 (depends-on "fill-column-indicator")
+(depends-on "fireplace")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
 (depends-on "flymake-easy")
