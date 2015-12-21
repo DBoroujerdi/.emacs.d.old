@@ -87,29 +87,3 @@
 (require 'init-ido)
 (if (eq system-type 'darwin)
     (require 'init-osx))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("ac2b1fed9c0f0190045359327e963ddad250e131fbf332e80d371b2e1dbc1dc4" default)))
- '(edts-man-root "/home/dborouje/.emacs.d/edts/doc/17.5")
- '(elfeed-feeds
-   (quote
-    ("http://inaka.net/blog/" "http://mostlyerlang.com/feed/" "http://www.theguardian.com/football/rss" "http://www.planeterlang.com/atom.xml"
-     ("http://blog.erlware.org/rss/" erlang)
-     ("http://nedroid.com/feed/" webcomic)
-     ("http://feed.codeofrob.com/RobAshton" erlang)
-     ("http://news.ycombinator.com/rss" general)
-     ("http://feeds.feedburner.com/codinghorror" general)
-     ("http://martinfowler.com/bliki/bliki.atom" general)
-     ("http://www.bbc.co.uk/blogs/adamcurtis/atom.xml" culture))))
- '(markdown-command "/usr/bin/pandoc"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
