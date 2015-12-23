@@ -50,11 +50,6 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 
-;;=============== Global Modes ===============
-
-(docker-global-mode 1)
-
-
 ;; ========= Load other config files =========
 
 

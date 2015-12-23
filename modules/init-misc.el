@@ -53,4 +53,7 @@
 ;; disable flyspell
 (flyspell-mode 0)
 
+;; docker everywhere
+(docker-global-mode 1)
+
 (provide 'init-misc)
