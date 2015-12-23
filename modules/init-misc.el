@@ -50,4 +50,7 @@
 (custom-set-variables
  '(markdown-command "/usr/bin/pandoc"))
 
+;; disable flyspell
+(flyspell-mode 0)
+
 (provide 'init-misc)
