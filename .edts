@@ -1,5 +1,0 @@
-:name "mm"
-:node-sname "mm"
-:lib-dirs '("deps")
-:erlang-cookie "mm"
-:start-command "erl +P 5000000 +K true -setcookie mm -pa ebin -pa ebin -pa deps/consse/ebin deps/cors/ebin deps/cowboy/ebin deps/cowlib/ebin deps/elastic/ebin deps/fa/ebin deps/goldrush/ebin deps/gproc/ebin deps/graph/ebin deps/gun/ebin deps/jsx/ebin deps/lager/ebin deps/ranch/ebin deps/recon/ebin deps/u/ebin -boot start_sasl -config dev.config -mnesia dir db -mnesia debug verbose -s rb -s mm -sname mm"
