@@ -35,6 +35,7 @@
 (depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "f")
+(depends-on "fancy-battery")
 (depends-on "fill-column-indicator")
 (depends-on "fireplace")
 (depends-on "flycheck")

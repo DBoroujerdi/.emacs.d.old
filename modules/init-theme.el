@@ -60,6 +60,8 @@
 ;; (add-hook 'shell-dynamic-complete-functions
 ;;   'bash-completion-dynamic-complete)
 
+(add-hook 'after-init-hook #'fancy-battery-mode)
+
 (load-theme 'gruvbox t)
 
 (provide 'init-theme)
