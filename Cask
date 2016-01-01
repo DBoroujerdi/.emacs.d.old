@@ -104,6 +104,7 @@
 (depends-on "use-package")
 (depends-on "warm-night-theme")
 (depends-on "web-mode")
+(depends-on "which-key")
 (depends-on "windata")
 (depends-on "xkcd")
 (depends-on "yaml-mode")

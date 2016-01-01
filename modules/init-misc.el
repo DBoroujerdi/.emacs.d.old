@@ -56,4 +56,8 @@
 ;; docker everywhere
 (docker-global-mode 1)
 
+;; display key binding following incomplete command
+(which-key-mode)
+(which-key-setup-side-window-right)
+
 (provide 'init-misc)
