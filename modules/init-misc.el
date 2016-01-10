@@ -44,7 +44,7 @@
 (delete-selection-mode 1)
 
 
-;; git
+;; display git status on buffer edge
 (global-git-gutter-mode +1)
 
 (custom-set-variables
