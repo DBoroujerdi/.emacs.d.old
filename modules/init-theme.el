@@ -30,6 +30,9 @@
 ;; disable scroll bar
 (scroll-bar-mode -1)
 
+;; buffer line spacing
+(setq-default line-spacing 5)
+
 ;; set font
 (set-frame-font "Source Code Pro 12" t t)
 
