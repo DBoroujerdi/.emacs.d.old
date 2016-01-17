@@ -63,6 +63,8 @@
 (global-set-key (kbd "C-c b") 'magit-blame)
 
 
+(global-set-key (kbd "M-/") 'hippie-expand)
+
 ;; unset a keybinding
 ;; (global-unset-key (kbd "C-x b"))
 
