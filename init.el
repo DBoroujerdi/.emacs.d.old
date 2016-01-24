@@ -3,11 +3,16 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#3c3836" "#fb4934" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
  '(custom-safe-themes
    (quote
-    ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "ac2b1fed9c0f0190045359327e963ddad250e131fbf332e80d371b2e1dbc1dc4" default)))
- '(edts-man-root "/home/dborouje/.emacs.d/edts/doc/18.2.1/18.2.1")
- '(markdown-command "/usr/bin/pandoc"))
+    ("ac2b1fed9c0f0190045359327e963ddad250e131fbf332e80d371b2e1dbc1dc4" default)))
+ '(edts-man-root "/home/dborouje/.emacs.d/edts/doc/17.5")
+ '(markdown-command "/usr/bin/pandoc")
+ '(send-mail-function (quote smtpmail-send-it))
+ '(smtpmail-smtp-server "imap.gmail.com")
+ '(smtpmail-smtp-service 25))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

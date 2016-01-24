@@ -72,6 +72,7 @@
 (depends-on "neotree")
 (depends-on "nodejs-repl")
 (depends-on "nyan-mode")
+(depends-on "offlineimap")
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "php+-mode")
