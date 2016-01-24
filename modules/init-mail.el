@@ -22,13 +22,6 @@
       mu4e-compose-signature
       (concat "Daniel Boroujerdi\n" "http://github.com/dboroujerdi\n"))
 
-;; send mail smtp
-;; (setq message-send-mail-function 'smtpmail-send-it
-;;       smtpmail-stream-type 'starttls
-;;       smtpmail-default-smtp-server "smtp.gmail.com"
-;;       smtpmail-smtp-server "smtp.gmail.com"
-;;       smtpmail-smtp-service 587)
-
 ;; send mail
 (setq send-mail-function 'smtpmail-send-it
       message-send-mail-function 'smtpmail-send-it
