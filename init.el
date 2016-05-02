@@ -102,5 +102,6 @@
 ;; (require 'init-scala)
 (require 'init-ido)
 (require 'init-mail)
+(require 'js)
 (if (eq system-type 'darwin)
     (require 'init-osx))
