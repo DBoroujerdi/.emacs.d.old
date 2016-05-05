@@ -2,6 +2,9 @@
 ;; https://github.com/skeeto/skewer-mode
 ;; http://emacs.stackexchange.com/questions/2376/how-to-use-skewer-mode
 
+;; js indent level to 2 spaces
+(setq js-indent-level 4)
+
 ;; js2 mode
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
