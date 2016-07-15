@@ -31,7 +31,7 @@
 
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa"      . "http://melpa.milkbox.net/packages/") t)
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
 (when (< emacs-major-version 24)
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
