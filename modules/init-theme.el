@@ -25,7 +25,7 @@
 (setq inhibit-startup-screen t)
 
 ;; no initial scratch text
-(setq initial-scratch-message)
+(setq initial-scratch-message nil)
 
 ;; disable scroll bar
 (scroll-bar-mode -1)
