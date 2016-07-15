@@ -42,16 +42,17 @@
 ;; meta arrow to move
 (windmove-default-keybindings 'meta)
 
+;; move buffer with Shift
+(global-set-key (kbd "S-<left>")  'windmove-left)
+(global-set-key (kbd "S-<right>") 'windmove-right)
+(global-set-key (kbd "S-<up>")    'windmove-up)
+(global-set-key (kbd "S-<down>")  'windmove-down)
+
 ;; another movement method
 (global-set-key (kbd "C-c <left>")  'windmove-left)
 (global-set-key (kbd "C-c <right>") 'windmove-right)
 (global-set-key (kbd "C-c <up>")    'windmove-up)
 (global-set-key (kbd "C-c <down>")  'windmove-down)
-
-(global-set-key (kbd "S-<left>")  'windmove-left)
-(global-set-key (kbd "S-<right>") 'windmove-right)
-(global-set-key (kbd "S-<up>")    'windmove-up)
-(global-set-key (kbd "S-<down>")  'windmove-down)
 
 ;; make a new frame
 ;; (global-set-key (kbd "M-n") 'make-frame)
