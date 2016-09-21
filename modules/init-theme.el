@@ -57,7 +57,7 @@
 
 ;; (sml/setup)
 
-(powerline-default-theme)
+;; (powerline-default-theme)
 
 ;; (autoload 'bash-completion-dynamic-complete
 ;;   "bash-completion"
