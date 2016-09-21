@@ -7,9 +7,9 @@
    ["#3c3836" "#fb4934" "#b8bb26" "#fabd2f" "#83a598" "#d3869b" "#8ec07c" "#ebdbb2"])
  '(custom-safe-themes
    (quote
-    ("ac2b1fed9c0f0190045359327e963ddad250e131fbf332e80d371b2e1dbc1dc4" default)))
+    ("3f5701c23d328be03536349b29cb24c5cfa79ea9ef9c46cf89668eda16b88a9c" "ac2b1fed9c0f0190045359327e963ddad250e131fbf332e80d371b2e1dbc1dc4" default)))
  '(edts-man-root "/home/dborouje/.emacs.d/edts/doc/17.5")
- '(markdown-command "/usr/bin/pandoc")
+ '(markdown-command "/usr/bin/pandoc" t)
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "imap.gmail.com")
  '(smtpmail-smtp-service 25))
