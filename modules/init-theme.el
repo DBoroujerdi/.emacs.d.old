@@ -34,10 +34,13 @@
 (setq-default line-spacing 5)
 
 ;; set font
-(set-frame-font "Source Code Pro 12" t t)
+;; (set-frame-font "Source Code Pro 12" t t)
 
 ;; for new frames and emacs client..
-(setq default-frame-alist '((font . "Source Code Pro 12")))
+;; (setq default-frame-alist '((font . "Source Code Pro 12")))
+
+;; set font size
+(set-face-attribute 'default nil :height 130)
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
@@ -67,6 +70,11 @@
 
 (add-hook 'after-init-hook #'fancy-battery-mode)
 
-(load-theme 'gruvbox t)
+;; load additional custom themes to load path
+;; additional themes that don't have elpa packages must
+;; checked out in this folder
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-github-theme/")
+
+(load-theme 'github t)
 
 (provide 'init-theme)
