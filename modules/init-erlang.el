@@ -1,13 +1,19 @@
 
+;; create erlang_home var for use below - this is where erlang is installed
 (defvar erlang_home "~/apps/erlang/")
 
+;; load erlang mode directly from erlang source
 (setq load-path (cons "~/apps/erlang/lib/tools-*/emacs/" load-path))
 
+;; set the erlang root dir, presumably used by erlang-mode
 (setq erlang-root-dir erlang_home)
+
+;; append erlang bin to the emacs path - equivalent to bash PATH
 (setq exec-path (cons (concat erlang_home "bin") exec-path))
 
 (require 'erlang-start)
 
+;; optional
 (add-hook 'erlang-mode-hook '(lambda() (setq indent-tabs-mode nil)))
 
 ;; (require 'erlang-flymake)
