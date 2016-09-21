@@ -20,7 +20,7 @@
 	      "\r" 'reindent-then-newline-and-indent)))
 
 (add-hook 'emacs-lisp-mode-hook 'eldoc-mode)
-(add-hook 'emacs-lisp-mode-hook 'flyspell-prog-mode) ;; Requires Ispell
+;; (add-hook 'emacs-lisp-mode-hook 'flyspell-prog-mode) ;; Requires Ispell
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 

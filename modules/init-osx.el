@@ -11,6 +11,6 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
-(setq ispell-program-name "/usr/local/bin/ispell")
+;; (setq ispell-program-name "/usr/local/bin/ispell")
 
 (provide 'init-osx)
