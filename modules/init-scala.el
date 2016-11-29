@@ -1,12 +1,43 @@
-(setq exec-path (append exec-path '("/usr/local/bin")))
 
-(require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+(use-package ensime
+  :ensure t
+  :pin melpa-stable)
 
-;; https://github.com/AndreaCrotti/yasnippet-snippets/tree/master/scala-mode
-(add-hook 'scala-mode-hook #'yas-minor-mode)
+(add-to-list 'exec-path "/usr/local/bin/")
 
-;; but company-mode / yasnippet conflict. Disable TAB in company-mode with
-(define-key company-active-map [tab] nil)
+(use-package popup-imenu
+  :commands popup-imenu
+  :bind ("M-i" . popup-imenu))
+
+
+;; Hungry / Contextual Backspace
+
+(defun contextual-backspace ()
+  "Hungry whitespace or delete word depending on context."
+  (interactive)
+  (if (looking-back "[[:space:]\n]\\{2,\\}" (- (point) 2))
+      (while (looking-back "[[:space:]\n]" (- (point) 1))
+        (delete-char -1))
+    (cond
+     ((and (boundp 'smartparens-strict-mode)
+           smartparens-strict-mode)
+      (sp-backward-kill-word 1))
+     ((and (boundp 'subword-mode)
+           subword-mode)
+      (subword-backward-kill 1))
+     (t
+      (backward-kill-word 1)))))
+
+(global-set-key (kbd "C-<backspace>") 'contextual-backspace)
+
+
+;; jump over the boilerplate at the beginning of most files:
+
+(scala-mode:goto-start-of-code)
+
+(use-package highlight-symbol
+  :diminish highlight-symbol-mode
+  :commands highlight-symbol
+  :bind ("C-h" . highlight-symbol))
 
 (provide 'init-scala)

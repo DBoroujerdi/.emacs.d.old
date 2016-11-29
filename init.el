@@ -99,7 +99,7 @@
 (require 'init-ess)
 (require 'init-erlang)
 (require 'init-yasnippet)
-;; (require 'init-scala)
+(require 'init-scala)
 (require 'init-ido)
 (require 'init-mail)
 (require 'js)

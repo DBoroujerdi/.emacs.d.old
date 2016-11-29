@@ -2,6 +2,7 @@
 (source gnu)
 (source marmalade)
 (source melpa)
+(source melpa-stable)
 
 (depends-on "aggressive-indent")
 (depends-on "alchemist")
@@ -81,6 +82,7 @@
 (depends-on "php-mode")
 (depends-on "pkg-info")
 (depends-on "popup")
+(depends-on "popup-imenu")
 (depends-on "popwin")
 (depends-on "powerline")
 (depends-on "prodigy")
@@ -89,6 +91,7 @@
 (depends-on "request")
 (depends-on "restclient")
 (depends-on "s")
+(depends-on "sbt-mode")
 (depends-on "scala-mode")
 (depends-on "shorten")
 (depends-on "shut-up")
