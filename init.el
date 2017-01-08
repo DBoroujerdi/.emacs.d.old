@@ -98,6 +98,7 @@
 (require 'init-markdown)
 (require 'init-ess)
 (require 'init-erlang)
+(require 'init-elixir)
 (require 'init-yasnippet)
 (require 'init-scala)
 (require 'init-ido)
