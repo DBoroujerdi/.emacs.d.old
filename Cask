@@ -61,6 +61,7 @@
 (depends-on "imenu-anywhere")
 (depends-on "js2-mode")
 (depends-on "js2-refactor")
+(depends-on "jsx-mode")
 (depends-on "lcs")
 (depends-on "less-css-mode")
 (depends-on "let-alist")

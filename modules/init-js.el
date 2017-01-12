@@ -9,6 +9,9 @@
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+;; jsx mode
+(add-to-list 'auto-mode-alist '("\\.jsx$" . jsx-mode))
+
 ;; skewer mode
 (add-hook 'js2-mode-hook 'skewer-mode)
 (add-hook 'css-mode-hook 'skewer-css-mode)
