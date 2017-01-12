@@ -34,13 +34,13 @@
 (setq-default line-spacing 5)
 
 ;; set font
-;; (set-frame-font "Source Code Pro 12" t t)
+ (set-frame-font "Inconsolata 13" t t)
 
 ;; for new frames and emacs client..
-;; (setq default-frame-alist '((font . "Source Code Pro 12")))
+(setq default-frame-alist '((font . "Inconsolata 13")))
 
 ;; set font size
-(set-face-attribute 'default nil :height 130)
+(set-face-attribute 'default nil :height 120)
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
