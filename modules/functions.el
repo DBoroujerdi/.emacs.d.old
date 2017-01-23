@@ -32,6 +32,12 @@ directory to make multiple eshell windows easier."
     (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)))
 
 
+(defun scala-format ()
+  (interactive)
+  (save-excursion
+    (shell-command-on-region (mark) (point) "scalafmt --stdin" (buffer-name) t)))
+
+
 (defun move-line (n)
   "Move the current line up or down by N lines."
   (interactive "p")
