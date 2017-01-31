@@ -61,4 +61,8 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (autoload 'ibuffer "ibuffer" "List buffers." t)
 
+
+;; turn off truncate lines by default
+(setq-default truncate-lines f)
+
 (provide 'init-misc)
