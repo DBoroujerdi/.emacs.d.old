@@ -1,5 +1,12 @@
 
 
+
+(use-package highlight-symbol
+  :diminish highlight-symbol-mode
+  :commands highlight-symbol
+  :bind ("C-h" . highlight-symbol))
+
+
 (use-package popup-imenu
   :commands popup-imenu
   :bind ("M-i" . popup-imenu))

@@ -26,14 +26,4 @@
     (scala-mode:goto-start-of-code)
     (global-set-key (kbd "C-<backspace>") 'contextual-backspace)))
 
-
-
-;; jump over the boilerplate at the beginning of most files:
-
-
-(use-package highlight-symbol
-  :diminish highlight-symbol-mode
-  :commands highlight-symbol
-  :bind ("C-h" . highlight-symbol))
-
 (provide 'init-scala)
