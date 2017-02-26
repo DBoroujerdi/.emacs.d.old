@@ -83,6 +83,9 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; inserts newline on C-n when on last line in the buffer
+(setq next-line-add-newlines t)
+
 
 ;; bash stuff
 ;; automatically make sh scripts executable on save
