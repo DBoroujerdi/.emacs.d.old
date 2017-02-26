@@ -1,9 +1,12 @@
-(message "loading theme.el..")
-
 ;; ========== Look & Feel =========
 
 ;; Themes
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+
+;;
+;; WINDOW
+;;
 
 ;; Disable toolbar
 (tool-bar-mode -1)
@@ -11,9 +14,8 @@
 ;; solid cursor
 (blink-cursor-mode 0)
 
-;; no scroll bar
-(when (display-graphic-p)
-  (scroll-bar-mode 0))
+;; disable scroll bar
+(scroll-bar-mode -1)
 
 ;; no tool bar
 (tool-bar-mode 0)
@@ -27,20 +29,8 @@
 ;; no initial scratch text
 (setq initial-scratch-message nil)
 
-;; disable scroll bar
-(scroll-bar-mode -1)
-
 ;; buffer line spacing
 (setq-default line-spacing 5)
-
-;; set font
- (set-frame-font "Inconsolata 13" t t)
-
-;; for new frames and emacs client..
-(setq default-frame-alist '((font . "Inconsolata 13")))
-
-;; set font size
-(set-face-attribute 'default nil :height 120)
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
@@ -49,14 +39,27 @@
 ;; width  -> num characters
 ;; height -> num lines
 
+
+
+;;
+;; FONT
+;;
+
+;; set font
+(defun font-string () "Inconsolata 13")
+
+(set-frame-font (font-string) t t)
+
+;; for new frames and emacs client..
+(setq default-frame-alist '((font . (font-string))))
+
+;; set font size
+(set-face-attribute 'default nil :height 120)
+
+
+
+
 ;; (require 'dirtree)
-
-;; inserts newline on C-n when on last line in the buffer
-(setq next-line-add-newlines t)
-
-;; automatically make sh scripts executable on save
-(add-hook 'after-save-hook
-	  'executable-make-buffer-file-executable-if-script-p)
 
 ;; (sml/setup)
 
@@ -67,8 +70,8 @@
 ;; load additional custom themes to load path
 ;; additional themes that don't have elpa packages must
 ;; checked out in this folder
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-github-theme/")
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-github-theme/")
 
-(load-theme 'github t)
+(load-theme 'gruvbox t)
 
 (provide 'init-theme)
