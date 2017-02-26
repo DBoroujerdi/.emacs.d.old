@@ -51,7 +51,13 @@
 (flyspell-mode 0)
 
 ;; docker everywhere
-(docker-global-mode 1)
+(use-package docker-mode
+  :disabled
+  :config
+  (progn
+    (docker-global-mode 1))
+  )
+
 
 ;; display key binding following incomplete command
 (which-key-mode)
