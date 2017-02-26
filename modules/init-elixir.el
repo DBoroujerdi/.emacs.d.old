@@ -10,33 +10,37 @@
   (setq alchemist-goto-elixir-source-dir "~/projects/open-source/elixir/")
 
   :config
-  ;; redefine the alchemist initial command - i find the normal 'a' difficult to reach
-  (setq alchemist-key-command-prefix (kbd "C-c ,")) ;; default: (kbd "C-c a")
+  (progn
+    ;; redefine the alchemist initial command - i find the normal 'a' difficult to reach
+    (setq alchemist-key-command-prefix (kbd "C-c ,")) ;; default: (kbd "C-c a")
 
-  ;; Show compilation output in test report
-  (setq alchemist-test-display-compilation-output t)
+    ;; Show compilation output in test report
+    (setq alchemist-test-display-compilation-output t)
 
-  ;; Run the whole test suite with 'alchemist-mix-test' after saving a buffer.
-  (setq alchemist-hooks-test-on-save t)
+    ;; Run the whole test suite with 'alchemist-mix-test' after saving a buffer.
+    (setq alchemist-hooks-test-on-save t)
 
-  ;; Compile your project with alchemist-mix-compile after saving a buffer.
-  (setq alchemist-hooks-compile-on-save t)
+    ;; Compile your project with alchemist-mix-compile after saving a buffer.
+    (setq alchemist-hooks-compile-on-save t)
+    )
   )
 
 (use-package elixir-mode
   :mode "\\.ex\\'" ;; '("\\.ex\\'" ".\\exs\\")
   :config
-  ;; start company on elixir mode start
-  (add-hook 'elixir-mode-hook 'company-mode)
+  (progn
+    ;; start company on elixir mode start
+    (add-hook 'elixir-mode-hook 'company-mode)
 
-  ;; start alchemist on elixir mode start
-  (add-hook 'elixir-mode-hook 'alchemist-mode)
+    ;; start alchemist on elixir mode start
+    (add-hook 'elixir-mode-hook 'alchemist-mode)
 
-  ;; allows the jumping back out of erlang code
-  (defun custom-erlang-mode-hook ()
-    (define-key erlang-mode-map (kbd "M-,") 'alchemist-goto-jump-back))
+    ;; allows the jumping back out of erlang code
+    (defun custom-erlang-mode-hook ()
+      (define-key erlang-mode-map (kbd "M-,") 'alchemist-goto-jump-back))
 
-  (add-hook 'erlang-mode-hook 'custom-erlang-mode-hook)
+    (add-hook 'erlang-mode-hook 'custom-erlang-mode-hook)
+    )
   )
 
 (provide 'init-elixir)
