@@ -69,6 +69,8 @@
 ;; delete trailing whitespace on save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; suppress 'ad-handle-definition: ‘ido-completing-read’ got redefined' warning
+(setq ad-redefinition-action 'accept)
 
 ;; ========= Load other config files =========
 
