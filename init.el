@@ -73,9 +73,9 @@
 ;; ========= Load other config files =========
 
 
-(defvar current-user
-      (getenv
-       (if (equal system-type 'windows-nt) "USERNAME" "USER")))
+(require 'use-package)
+(setq use-package-verbose t)
+
 
 (defun current-user ()
   (getenv
