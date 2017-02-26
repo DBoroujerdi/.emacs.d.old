@@ -1,4 +1,10 @@
 
+
+(use-package popup-imenu
+  :commands popup-imenu
+  :bind ("M-i" . popup-imenu))
+
+
 ;; allow ? help command where available
 ;; (global-discover-mode 1)
 

@@ -50,6 +50,7 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+(add-to-list 'exec-path "/usr/local/bin/")
 
 (global-auto-revert-mode t)
 

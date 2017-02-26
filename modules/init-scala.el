@@ -1,17 +1,5 @@
 
-(use-package ensime
-  :ensure t
-  :pin melpa-stable)
-
-(add-to-list 'exec-path "/usr/local/bin/")
-
-(use-package popup-imenu
-  :commands popup-imenu
-  :bind ("M-i" . popup-imenu))
-
-
-;; Hungry / Contextual Backspace
-
+;;;###autoload
 (defun contextual-backspace ()
   "Hungry whitespace or delete word depending on context."
   (interactive)
@@ -28,12 +16,20 @@
      (t
       (backward-kill-word 1)))))
 
-(global-set-key (kbd "C-<backspace>") 'contextual-backspace)
+
+(use-package ensime
+  :mode "\\.scala\\'"
+  :ensure t
+  :pin melpa-stable
+  :config
+  (progn
+    (scala-mode:goto-start-of-code)
+    (global-set-key (kbd "C-<backspace>") 'contextual-backspace)))
+
 
 
 ;; jump over the boilerplate at the beginning of most files:
 
-(scala-mode:goto-start-of-code)
 
 (use-package highlight-symbol
   :diminish highlight-symbol-mode
