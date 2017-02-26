@@ -1,4 +1,5 @@
 (use-package projectile
+  :disabled
   :config
   ;; make projectile global
   (projectile-global-mode 1)
