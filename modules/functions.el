@@ -1,4 +1,5 @@
 
+;;;###autoload
 (defun shell-here ()
   "Opens up a new shell in the directory associated with the
 current buffer's file. The eshell is renamed to match that
@@ -19,25 +20,25 @@ directory to make multiple eshell windows easier."
 
 (global-set-key (kbd "C-!") 'shell-here)
 
-
+;;;###autoload
 (defun xml-format ()
   (interactive)
   (save-excursion
     (shell-command-on-region (mark) (point) "xmllint --format -" (buffer-name) t)))
 
-
+;;;###autoload
 (defun json-format ()
   (interactive)
   (save-excursion
     (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)))
 
-
+;;;###autoload
 (defun scala-format ()
   (interactive)
   (save-excursion
     (shell-command-on-region (mark) (point) "scalafmt --stdin" (buffer-name) t)))
 
-
+;;;###autoload
 (defun move-line (n)
   "Move the current line up or down by N lines."
   (interactive "p")
@@ -51,6 +52,7 @@ directory to make multiple eshell windows easier."
     (forward-line -1)
     (forward-char col)))
 
+;;;###autoload
 (defun move-line-up (n)
   "Move the current line up by N lines."
   (interactive "p")
@@ -61,8 +63,7 @@ directory to make multiple eshell windows easier."
   (interactive "p")
   (move-line (if (null n) 1 n)))
 
-
-;; Toggle between split windows and a single window
+;;;###autoload
 (defun toggle-windows-split()
   "Switch back and forth between one window and whatever split of windows we might have in the frame. The idea is to maximize the current buffer, while being able to go back to the previous split of windows in the frame simply by calling this command again."
   (interactive)
@@ -75,10 +76,9 @@ directory to make multiple eshell windows easier."
           (jump-to-register ?u))))
   (my-iswitchb-close))
 
-
-;; Display all the monospace fonts available to Emacs in a dedicated buffer
+;;;###autoload
 (defun font-is-mono-p (font-family)
-  ;; with-selected-window
+  "Display all the monospace fonts available to Emacs in a dedicated buffer"
   (let ((wind (selected-window))
         m-width l-width)
    (with-current-buffer "*Monospace Fonts*"
