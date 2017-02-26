@@ -2,37 +2,41 @@
 ;; mode config
 ;;
 
-;; point elixir to erlang and elixir language source
-(setq alchemist-goto-erlang-source-dir "~/projects/open-source/otp/")
-(setq alchemist-goto-elixir-source-dir "~/projects/open-source/elixir/")
+(use-package alchemist-mode
+  :defer t ;; will be loaded by elixir mode
+  :init
+  ;; point to erlang and elixir language source
+  (setq alchemist-goto-erlang-source-dir "~/projects/open-source/otp/")
+  (setq alchemist-goto-elixir-source-dir "~/projects/open-source/elixir/")
 
-;; start alchemist on elixir mode start
-(add-hook 'elixir-mode-hook 'alchemist-mode)
+  :config
+  ;; redefine the alchemist initial command - i find the normal 'a' difficult to reach
+  (setq alchemist-key-command-prefix (kbd "C-c ,")) ;; default: (kbd "C-c a")
 
-;; start company on elixir mode start
-(add-hook 'elixir-mode-hook 'company-mode)
+  ;; Show compilation output in test report
+  (setq alchemist-test-display-compilation-output t)
 
-;; allows the jumping back out of erlang code
-(defun custom-erlang-mode-hook ()
-  (define-key erlang-mode-map (kbd "M-,") 'alchemist-goto-jump-back))
+  ;; Run the whole test suite with 'alchemist-mix-test' after saving a buffer.
+  (setq alchemist-hooks-test-on-save t)
 
-(add-hook 'erlang-mode-hook 'custom-erlang-mode-hook)
+  ;; Compile your project with alchemist-mix-compile after saving a buffer.
+  (setq alchemist-hooks-compile-on-save t)
+  )
 
+(use-package elixir-mode
+  :mode "\\.ex\\'" ;; '("\\.ex\\'" ".\\exs\\")
+  :config
+  ;; start company on elixir mode start
+  (add-hook 'elixir-mode-hook 'company-mode)
 
-;;
-;; editor config
-;;
+  ;; start alchemist on elixir mode start
+  (add-hook 'elixir-mode-hook 'alchemist-mode)
 
-;; redefine the alchemist initial command - i find the normal 'a' difficult to reach
-(setq alchemist-key-command-prefix (kbd "C-c ,")) ;; default: (kbd "C-c a")
+  ;; allows the jumping back out of erlang code
+  (defun custom-erlang-mode-hook ()
+    (define-key erlang-mode-map (kbd "M-,") 'alchemist-goto-jump-back))
 
-;; Show compilation output in test report
-(setq alchemist-test-display-compilation-output t)
-
-;; Run the whole test suite with 'alchemist-mix-test' after saving a buffer.
-(setq alchemist-hooks-test-on-save t)
-
-;; Compile your project with alchemist-mix-compile after saving a buffer.
-(setq alchemist-hooks-compile-on-save t)
+  (add-hook 'erlang-mode-hook 'custom-erlang-mode-hook)
+  )
 
 (provide 'init-elixir)
