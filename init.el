@@ -51,12 +51,6 @@
   (exec-path-from-shell-initialize))
 
 
-(defun load-init-theme (nothing)
-  (load-file "~/.emacs.d/modules/init-theme.el"))
-
-(add-hook 'after-make-frame-functions 'load-init-theme)
-
-
 (global-auto-revert-mode t)
 
 ;; ===== Shell =====
