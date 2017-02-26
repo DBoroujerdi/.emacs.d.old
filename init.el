@@ -20,6 +20,11 @@
  ;; If there is more than one, they won't work right.
  )
 
+
+(defvar emacs-d
+  (file-name-directory
+   (file-chase-links load-file-name)))
+
 ;; ===== Package Archives ======
 
 (require 'cask "~/.cask/cask.el")
@@ -78,11 +83,13 @@
       (getenv
        (if (equal system-type 'windows-nt) "USERNAME" "USER")))
 
-(message "Running as user %s .." current-user)
+(defun current-user ()
+  (getenv
+   (if (equal system-type 'windows-nt) "USERNAME" "USER")))
 
-(defvar root-dir "~/.emacs.d/")
+(message "Running as user %s .." (current-user))
 
-(defvar modules-dir (expand-file-name  "modules/" root-dir)
+(defvar modules-dir (expand-file-name  "modules/" emacs-d)
   "This directory houses all of the user  modules.")
 
 (message "Added %s to load-path" modules-dir)
