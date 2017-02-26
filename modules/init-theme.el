@@ -62,13 +62,7 @@
 
 ;; (powerline-default-theme)
 
-;; (autoload 'bash-completion-dynamic-complete
-;;   "bash-completion"
-;;   "BASH completion hook")
-;; (add-hook 'shell-dynamic-complete-functions
-;;   'bash-completion-dynamic-complete)
-
-(add-hook 'after-init-hook #'fancy-battery-mode)
+;; (add-hook 'after-init-hook #'fancy-battery-mode)
 
 ;; load additional custom themes to load path
 ;; additional themes that don't have elpa packages must

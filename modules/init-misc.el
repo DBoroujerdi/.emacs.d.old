@@ -83,6 +83,19 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+
+;; bash stuff
+;; automatically make sh scripts executable on save
+;; (add-hook 'after-save-hook
+;; 	  'executable-make-buffer-file-executable-if-script-p)
+
+;; (autoload 'bash-completion-dynamic-complete
+;;   "bash-completion"
+;;   "BASH completion hook")
+;; (add-hook 'shell-dynamic-complete-functions
+;;   'bash-completion-dynamic-complete)
+
+
 ;; turn off truncate lines by default
 (setq-default truncate-lines f)
 
