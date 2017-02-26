@@ -62,6 +62,8 @@
 (autoload 'ibuffer "ibuffer" "List buffers." t)
 
 
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; turn off truncate lines by default
 (setq-default truncate-lines f)
 
