@@ -94,6 +94,7 @@ directory to make multiple eshell windows easier."
      (setq m-width (car (posn-x-y (posn-at-point))))
      (eq l-width m-width))))
 
+;;;###autoload
 (defun compare-monospace-fonts ()
   "Display a list of all monospace font faces."
   (interactive)

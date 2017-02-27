@@ -1,17 +1,5 @@
 
 
-
-(use-package highlight-symbol
-  :diminish highlight-symbol-mode
-  :commands highlight-symbol
-  :bind ("C-h" . highlight-symbol))
-
-
-(use-package popup-imenu
-  :commands popup-imenu
-  :bind ("M-i" . popup-imenu))
-
-
 ;; allow ? help command where available
 ;; (global-discover-mode 1)
 
@@ -62,14 +50,6 @@
 
 ;; disable flyspell
 (flyspell-mode 0)
-
-;; docker everywhere
-(use-package docker-mode
-  :disabled
-  :config
-  (progn
-    (docker-global-mode 1))
-  )
 
 
 ;; display key binding following incomplete command
