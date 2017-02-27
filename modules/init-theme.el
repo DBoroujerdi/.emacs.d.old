@@ -45,8 +45,10 @@
 ;; FONT
 ;;
 
-;; set font
-(defun font-string () "Inconsolata 13")
+;; set font.
+(defun font-string ()
+  "Gets font string."
+  "Inconsolata 13")
 
 (set-frame-font (font-string) t t)
 
