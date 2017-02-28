@@ -20,6 +20,9 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; disable annoying ssh warning
+(setq exec-path-from-shell-check-startup-files nil)
+
 
 (defvar emacs-d
   (file-name-directory
