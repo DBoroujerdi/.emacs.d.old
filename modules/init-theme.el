@@ -45,15 +45,10 @@
 ;; FONT
 ;;
 
-;; set font.
-(defun font-string ()
-  "Gets font string."
-  "Inconsolata 13")
-
-(set-frame-font (font-string) t t)
+(set-frame-font "Inconsolata 13" t t)
 
 ;; for new frames and emacs client..
-(setq default-frame-alist '((font . (font-string))))
+(setq default-frame-alist '((font . "Inconsolata 13")))
 
 ;; set font size
 (set-face-attribute 'default nil :height 120)
