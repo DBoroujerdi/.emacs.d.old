@@ -51,11 +51,6 @@
 ;; disable flyspell
 (flyspell-mode 0)
 
-
-;; display key binding following incomplete command
-(which-key-mode)
-(which-key-setup-side-window-right)
-
 ;; ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (autoload 'ibuffer "ibuffer" "List buffers." t)

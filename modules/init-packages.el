@@ -4,6 +4,17 @@
 
 ;;; Code:
 
+(use-package diminish)
+
+;; display key binding following incomplete command
+(use-package which-key
+  :diminish which-key-mode
+  :config
+  (progn
+    (which-key-mode)
+    (which-key-setup-side-window-right)
+    ))
+
 (use-package company-mode
   :config
   (progn
