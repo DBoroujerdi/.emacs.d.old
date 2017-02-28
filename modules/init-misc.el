@@ -75,6 +75,6 @@
 
 
 ;; turn off truncate lines by default
-(setq-default truncate-lines f)
+;; (setq-default truncate-lines f)
 
 (provide 'init-misc)

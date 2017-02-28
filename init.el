@@ -102,6 +102,7 @@
 (require 'keys)
 (require 'init-theme)
 (require 'init-project)
+(require 'init-packages)
 (require 'init-misc)
 (require 'init-ido)
 ;; (require 'init-js)
