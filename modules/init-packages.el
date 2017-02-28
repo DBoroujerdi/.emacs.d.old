@@ -100,8 +100,7 @@
     )
 
 
-(use-package alchemist-mode
-  :defer t ;; will be loaded by elixir mode
+(use-package alchemist
   :init
   ;; point to erlang and elixir language source
   (setq alchemist-goto-erlang-source-dir "~/projects/open-source/otp/")
@@ -124,7 +123,7 @@
   )
 
 (use-package elixir-mode
-  :mode "\\.ex\\'" ;; '("\\.ex\\'" ".\\exs\\")
+  ;; :mode "\\.ex\\'" ;; '("\\.ex\\'" ".\\exs\\")
   :config
   (progn
     ;; start company on elixir mode start
