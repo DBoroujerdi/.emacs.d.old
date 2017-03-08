@@ -6,6 +6,8 @@
 
 (use-package diminish)
 
+(use-package show-paren-mode)
+
 ;; display key binding following incomplete command
 (use-package which-key
   :diminish which-key-mode
