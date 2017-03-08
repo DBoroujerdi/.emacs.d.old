@@ -76,6 +76,8 @@
 ;; suppress 'ad-handle-definition: ‘ido-completing-read’ got redefined' warning
 (setq ad-redefinition-action 'accept)
 
+(setq c-default-style "linux" c-basic-offset 8)
+
 ;; ========= Load other config files =========
 
 
