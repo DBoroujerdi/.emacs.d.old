@@ -75,6 +75,10 @@
     (define-key yas-minor-mode-map [(tab)] nil)
     (define-key yas-minor-mode-map (kbd "TAB") nil)))
 
+(use-package clojure-mode
+  :mode "\\.clj\\'")
+(use-package cider
+  :mode "\\.clj\\'")
 
 (use-package emacs-lisp-mode
   :mode "\\.el\\'"

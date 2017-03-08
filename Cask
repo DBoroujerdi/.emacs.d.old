@@ -11,6 +11,7 @@
 (depends-on "bind-key")
 (depends-on "browse-kill-ring")
 (depends-on "cask")
+(depends-on "cider")
 (depends-on "circe")
 (depends-on "coffee-mode")
 (depends-on "color-theme-github")
