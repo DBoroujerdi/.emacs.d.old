@@ -8,6 +8,9 @@
 
 (use-package show-paren-mode)
 
+(use-package makefile-mode
+  :mode "Makefile")
+
 ;; display key binding following incomplete command
 (use-package which-key
   :diminish which-key-mode
