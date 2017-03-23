@@ -20,6 +20,16 @@ directory to make multiple eshell windows easier."
 
 (global-set-key (kbd "C-!") 'shell-here)
 
+
+;; define function to shutdown emacs server instance
+;;;###autoload
+(defun server-shutdown ()
+  "Save buffers, Quit, and Shutdown (kill) server"
+  (interactive)
+  (save-some-buffers)
+  (kill-emacs)
+  )
+
 ;;;###autoload
 (defun xml-format ()
   (interactive)
