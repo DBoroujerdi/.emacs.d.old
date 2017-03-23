@@ -23,6 +23,8 @@
 ;; disable annoying ssh warning
 (setq exec-path-from-shell-check-startup-files nil)
 
+(setq c-default-style "linux" c-basic-offset 8)
+
 
 (defvar emacs-d
   (file-name-directory
