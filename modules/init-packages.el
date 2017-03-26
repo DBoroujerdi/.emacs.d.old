@@ -20,6 +20,15 @@
     (which-key-setup-side-window-right)
     ))
 
+(use-package neo-tree
+  :init
+  (setq neo-smart-open t)
+  (setq projectile-switch-project-action 'neotree-projectile-action)
+
+  (global-set-key (kbd "C-c t") 'neotree-toggle)
+  (global-set-key [f8] 'neotree-toggle)
+  )
+
 (use-package company-mode
   :config
   (progn
