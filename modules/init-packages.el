@@ -6,7 +6,7 @@
 
 (use-package diminish)
 
-(use-package show-paren-mode)
+(show-paren-mode 1)
 
 (use-package makefile-mode
   :mode "Makefile")
