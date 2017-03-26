@@ -125,6 +125,11 @@
     (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
     )
 
+(use-package flycheck
+  :config
+  (progn
+    (setq flycheck-display-errors-function nil)
+    (add-hook 'after-init-hook 'global-flycheck-mode)))
 
 (use-package alchemist
   :init
@@ -135,16 +140,19 @@
   :config
   (progn
     ;; redefine the alchemist initial command - i find the normal 'a' difficult to reach
-    (setq alchemist-key-command-prefix (kbd "C-c ,")) ;; default: (kbd "C-c a")
+    ;; (setq alchemist-key-command-prefix (kbd "C-c ,")) ;; default: (kbd "C-c a")
 
     ;; Show compilation output in test report
     (setq alchemist-test-display-compilation-output t)
 
     ;; Run the whole test suite with 'alchemist-mix-test' after saving a buffer.
-    (setq alchemist-hooks-test-on-save t)
+    ;; (setq alchemist-hooks-test-on-save t)
 
     ;; Compile your project with alchemist-mix-compile after saving a buffer.
-    (setq alchemist-hooks-compile-on-save t)
+    ;; (setq alchemist-hooks-compile-on-save t)
+
+    (require 'flycheck-mix)
+    (flycheck-mix-setup)
     )
   )
 

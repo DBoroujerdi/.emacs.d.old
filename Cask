@@ -1,4 +1,5 @@
 (source "elpa" "http://elpa.gnu.org/packages/")
+(source "melpa-stable" "https://stable.melpa.org/packages/")
 (source gnu)
 (source marmalade)
 (source melpa)
@@ -46,6 +47,7 @@
 (depends-on "fireplace")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
+(depends-on "flycheck-mix")
 (depends-on "flymake-easy")
 (depends-on "flymake-puppet")
 (depends-on "git-gutter")
