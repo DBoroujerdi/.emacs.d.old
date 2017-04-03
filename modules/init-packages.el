@@ -17,7 +17,7 @@
   :config
   (progn
     (which-key-mode)
-    (which-key-setup-side-window-right)
+    (which-key-setup-minibuffer)
     ))
 
 (use-package neo-tree
