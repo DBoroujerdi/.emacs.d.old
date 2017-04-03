@@ -59,6 +59,19 @@
     (require 'ess-site)
     ))
 
+(use-package w3m
+  :ensure w3m
+  :init
+  (setq w3m-coding-system 'utf-8
+        w3m-file-coding-system 'utf-8
+        w3m-file-name-coding-system 'utf-8
+        w3m-input-coding-system 'utf-8
+        w3m-output-coding-system 'utf-8
+        w3m-terminal-coding-system 'utf-8
+        w3m-use-cookies t
+        w3m-cookie-accept-bad-cookies t)
+  :bind ("C-c m w" . w3m-browse-url))
+
 (use-package yaml-mode
   :mode "\\.yaml\\'")
 

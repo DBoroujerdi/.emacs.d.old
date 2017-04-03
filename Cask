@@ -122,6 +122,7 @@
 (depends-on "tree-mode")
 (depends-on "twittering-mode")
 (depends-on "use-package")
+(depends-on "w3m")
 (depends-on "warm-night-theme")
 (depends-on "web-mode")
 (depends-on "which-key")
