@@ -33,8 +33,8 @@
 (setq-default line-spacing 5)
 
 ;; display line numbers
-(setq linum-format "%d ")
-(global-linum-mode t)
+;; (setq linum-format "%d ")
+;; (global-linum-mode t)
 
 ;; window size
 (setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 50)))
