@@ -32,6 +32,7 @@
 (depends-on "edts")
 (depends-on "elfeed")
 (depends-on "elfeed-goodies")
+(depends-on "elixir-mix")
 (depends-on "elixir-mode")
 (depends-on "elixir-yasnippets")
 (depends-on "elm-mode")
