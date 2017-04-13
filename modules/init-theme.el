@@ -66,7 +66,7 @@
 
 ;; (sml/setup)
 
-;; (powerline-default-theme)
+(powerline-vim-theme)
 
 ;; (add-hook 'after-init-hook #'fancy-battery-mode)
 
@@ -75,6 +75,6 @@
 ;; checked out in this folder
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-github-theme/")
 
-(load-theme 'gruvbox t)
+(load-theme 'solarized-light t)
 
 (provide 'init-theme)
