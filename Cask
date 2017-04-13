@@ -7,6 +7,7 @@
 
 (depends-on "aggressive-indent")
 (depends-on "alchemist")
+(depends-on "all-the-icons")
 (depends-on "async")
 (depends-on "auto-complete")
 (depends-on "bind-key")

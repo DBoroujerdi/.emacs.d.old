@@ -17,6 +17,8 @@
 (use-package makefile-mode
   :mode "Makefile")
 
+(use-package all-the-icons)
+
 ;; display key binding following incomplete command
 (use-package which-key
   :diminish which-key-mode
@@ -30,6 +32,7 @@
   :init
   (setq neo-smart-open t)
   (setq projectile-switch-project-action 'neotree-projectile-action)
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
   (global-set-key (kbd "C-c t") 'neotree-toggle)
   (global-set-key [f8] 'neotree-toggle)
