@@ -2,6 +2,12 @@
 
 ;;; Commentary:
 
+;;; use-package glossary
+;;; :ensure - install a package automatically if not already present
+;;; :diminish - if diminish is installed, it will remove package string from the mode line
+;;; :init - will get executed before the package is loaded
+;;; :config - executed after a package is loaded
+
 ;;; Code:
 
 (use-package diminish)
