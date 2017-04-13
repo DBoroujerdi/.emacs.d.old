@@ -14,6 +14,13 @@
 
 (show-paren-mode 1)
 
+(use-package git-gutter
+  :ensure t
+  :diminish git-gutter-mode
+  :init (progn
+          (global-git-gutter-mode)
+          ))
+
 (use-package makefile-mode
   :mode "Makefile")
 
