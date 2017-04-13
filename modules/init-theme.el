@@ -44,6 +44,8 @@
 ;; height -> num lines
 
 
+;; limit the number of times a frame can split
+(setq split-width-threshold 200)
 
 ;;
 ;; FONT
