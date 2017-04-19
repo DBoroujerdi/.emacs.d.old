@@ -192,10 +192,20 @@
     )
 
 (use-package flycheck
-  :config
+  :ensure t
+  :init
   (progn
-    (setq flycheck-display-errors-function nil)
-    (add-hook 'after-init-hook 'global-flycheck-mode)))
+    (global-flycheck-mode)
+
+    (add-to-list 'display-buffer-alist
+                 `(,(rx bos "*Flycheck errors*" eos)
+                   (display-buffer-reuse-window
+                    display-buffer-in-side-window)
+                   (side            . bottom)
+                   (reusable-frames . visible)
+                   (window-height   . 0.15)))
+
+    ))
 
 (use-package alchemist
   :init
